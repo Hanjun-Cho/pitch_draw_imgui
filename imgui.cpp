@@ -6949,7 +6949,7 @@ void ImGui::EndChild()
         if ((child_window->DC.NavLayersActiveMask != 0 || child_window->DC.NavWindowHasScrollY) && !nav_flattened)
         {
             ItemAdd(bb, child_window->ChildId);
-            RenderNavCursor(bb, child_window->ChildId);
+            RenderNavCursor(bb, child_window->ChildId, ImGuiNavRenderCursorFlags_Compact);
 
             // When browsing a window that has no activable items (scroll only) we keep a highlight on the child (pass g.NavId to trick into always displaying)
             if (child_window->DC.NavLayersActiveMask == 0 && child_window == g.NavWindow)
