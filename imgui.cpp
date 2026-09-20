@@ -1717,7 +1717,7 @@ ImGuiIO::ImGuiIO()
     ConfigNavEscapeClearFocusItem = true;
     ConfigNavEscapeClearFocusWindow = false;
     ConfigNavCursorVisibleAuto = true;
-    ConfigNavCursorVisibleAlways = true;
+    ConfigNavCursorVisibleAlways = false;
 
     // Docking options (when ImGuiConfigFlags_DockingEnable is set)
     ConfigDockingNoSplit = false;
